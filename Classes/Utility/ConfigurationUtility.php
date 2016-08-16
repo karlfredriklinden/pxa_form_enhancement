@@ -44,7 +44,7 @@ class ConfigurationUtility {
      */
     static public function getConfiguration() {
         if(self::$configuration === NULL) {
-            self::$configuration = is_array($GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_pxaformenhancement.']['settings.']) ? GeneralUtility::removeDotsFromTS($GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_pxaformenhancement.']['settings.']) : [];
+            self::$configuration = is_array($GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_pxaformenhancement.']['settings.']) ? GeneralUtility::removeDotsFromTS($GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_pxaformenhancement.']['settings.']) : Array();
         }
 
         return self::$configuration;

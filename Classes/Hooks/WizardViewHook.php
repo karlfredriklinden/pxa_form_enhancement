@@ -51,7 +51,7 @@ class WizardViewHook {
     protected $pageRenderer;
 
     public function __construct() {
-        $this->pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
+        $this->pageRenderer = GeneralUtility::makeInstance('TYPO3\CMS\Core\Page\PageRenderer');
     }
 
     /**
